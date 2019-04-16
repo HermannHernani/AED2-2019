@@ -82,7 +82,7 @@
 	z-index: 2;
 	box-shadow: 5px 5px black;
 	margin-top: -2.5cm;
-	margin-left: 6cm;
+	margin-left: 25%;
 	background-size: cover;
 	border: 2px solid #000000;
 }
@@ -124,7 +124,7 @@
 }
 
 
-.div3{
+/* .div3{
 	position: absolute;
 	background-color: #B6DBC9;
 	z-index: 1;
@@ -132,7 +132,7 @@
 	padding: 10px;
 	width: 1345px;
 	height: auto;
-}
+} */
 
 .botoes {
 	text-align: center;
