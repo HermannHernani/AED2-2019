@@ -1,0 +1,35 @@
+<html>
+<body>
+<h2>Gerenciamento de fila com prioridade BANCO  S.A</h2>
+<form name="form1" action="lista_banco.php" method="post">
+quantidade de pessoas a serem atendidas <input type="number" name="quantidade" value=""> <input type="button" value="Alterar" onclick="altera()"><br/>
+<div id="id2"></div>
+
+
+<br> <input type="submit" value="Enviar"> </br>
+</form>
+<script>
+
+
+
+
+function altera()
+{	var conteudo = "";
+	var contador = 0;
+	while (contador < parseInt(form1.quantidade.value))
+	{	conteudo = conteudo+'Nome do cliente '+(contador+1)+' <input type ="text" name="nome'+(contador+1)+'" value=""maxlength="50">  Tipo de atendimento  <select name="prioridades" form="form1"><option value="caixa">Caixa Atendimento Prioritário</option><option value="caixa_deposito">Caixa depósitos</option><option value="caixa_saque">Caixa Saque</option><option value="gerencia">Gerencia Atendimento Prioritário</option></select><option name="gerencia_geral"value="">Gerencia Geral</option> <br/>';
+		contador = contador+1;
+	}
+	document.getElementById("id2").innerHTML = conteudo;
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
